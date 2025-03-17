@@ -24,15 +24,22 @@
 StrutsProject/
 │── Java Resources/
 │   ├── src/
-│   │   ├── action/  (Action 클래스 저장)
+│   │   ├── action/BoardAction.java (Action 클래스 저장)
+│   │   ├── model/Board.java(VO 또는 DTO 클래스)
+│   │   ├── dao/BoardDAO.java(데이터 액세스 객체, DB 처리 클래스)
+│   │   ├── utils/DBConnection.java  (DB 연결 파일)
 │   │   ├── struts.xml  (Struts 설정 파일)
 │── WebContent/
 │   ├── WEB-INF/
 │   │   ├── web.xml  (웹 애플리케이션 설정)
 │   │   ├── lib/ (Struts2 필수 JAR 파일)
 │   ├── jsp/
-│   │   ├── hello.jsp  (JSP 파일)
+│   │   ├── list.jsp  (JSP 파일)
+│   │   ├── edit.jsp  (JSP 파일)
+│   │   ├── view.jsp  (JSP 파일)
+│   │   ├── write.jsp  (JSP 파일)
 ```
+
 
 ---
 
