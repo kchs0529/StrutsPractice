@@ -1,0 +1,32 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="hello" class="action.HelloAction" method="execute">
+            <result name="success">/jsp/hello.jsp</result>
+        </action>
+        <action name="list" class="action.BoardAction" method="list">
+            <result name="success">/jsp/list.jsp</result>
+        </action>
+        <action name="write" class="action.BoardAction" method="write">
+            <result name="success">/jsp/write.jsp</result>
+        </action>
+        <action name="save" class="action.BoardAction" method="save">
+            <result name="success" type="redirect">/list</result>
+        </action>
+        <action name="view" class="action.BoardAction" method="view">
+            <result name="success">/jsp/view.jsp</result>
+        </action>
+        <action name="edit" class="action.BoardAction" method="edit">
+            <result name="success">/jsp/edit.jsp</result>
+        </action>
+        <action name="update" class="action.BoardAction" method="update">
+            <result name="success" type="redirect">/list</result>
+        </action>
+        <action name="delete" class="action.BoardAction" method="delete">
+            <result name="success" type="redirect">/list</result>
+        </action>    
+    </package>
+</struts>
